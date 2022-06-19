@@ -24,7 +24,7 @@ class App extends Component {
     document.documentElement.lang = pickedLanguage;
     var resumePath =
       document.documentElement.lang === window.$primaryLanguage
-        ? `res_primaryLanguage.json`
+        ? `https://api.npoint.io/abba6a16b4e7006338c0`
         : `res_secondaryLanguage.json`;
     this.loadResumeFromPath(resumePath);
   }
@@ -66,7 +66,7 @@ class App extends Component {
 
   loadSharedData() {
     $.ajax({
-      url: `portfolio_shared_data.json`,
+      url: `https://api.npoint.io/6f04f382e68c31a98ac0`,
       dataType: "json",
       cache: false,
       success: function (data) {
