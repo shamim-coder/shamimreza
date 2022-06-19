@@ -85,6 +85,7 @@ class App extends Component {
         <Header sharedData={this.state.sharedData.basic_info} />
         <div className="col-md-12 mx-auto text-center language">
           <div
+          className="invisible"
             onClick={() =>
               this.applyPickedLanguage(
                 window.$primaryLanguage,
@@ -101,6 +102,7 @@ class App extends Component {
             ></span>
           </div>
           <div
+          className="invisible"
             onClick={() =>
               this.applyPickedLanguage(
                 window.$secondaryLanguage,
