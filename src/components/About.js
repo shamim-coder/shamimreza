@@ -69,6 +69,7 @@ class About extends Component {
                     <br />
                     <br />
                     {about}
+                    <button class="btn"> Download Resume <button/>
                   </div>
                 </div>
               </div>
